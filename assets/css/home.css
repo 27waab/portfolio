@@ -5,8 +5,8 @@
     font-family: "Poppins", sans-serif;
     user-select: none;
 }
-.closeBtn {
-    font-size: 50px;
+.closeBtn i {
+    font-size: 36px;
     cursor: pointer;
 }
 nav {
