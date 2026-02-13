@@ -1,6 +1,6 @@
 let menuBtn = document.getElementById("menuBtn");
 let closeBtn = document.getElementById("closeMenu");
-let nav = document.querySelector(".navagation")
+let nav = document.querySelector("nav");
 
 
 menuBtn.addEventListener("click", () => {
