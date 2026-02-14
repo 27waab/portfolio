@@ -16,9 +16,24 @@
         <nav class="bg-white z-50 w-full h-screen fixed top-0 left-0 flex justify-center items-center transition duration-500">
             <div id="closeMenu" class="closeBtn text-red-500 hover:text-red-600 transition duration-300 ease-in-out absolute top-4 right-8"><i class="hgi hgi-stroke hgi-cancel-circle"></i></div>
             <ul class="w-full">
-                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300"><a href="index.html">Home</a></li>
-                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300"><a href="#">Projects</a></li>
-                <li class="text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300"><a href="#">Download CV</a></li>
+                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300 "><a href="index.html">
+                    <div class="flex items-center justify-center">
+                        <i class="hgi hgi-stroke hgi-home-01 mr-2"></i>
+                        <p>Home</p>
+                    </div>
+                </a></li>
+                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300"><a href="#">
+                    <div class="flex items-center justify-center">
+                        <i class="hgi hgi-stroke hgi-package mr-2"></i>
+                        <p>Projects</p>
+                    </div>
+                </a></li>
+                <li class="text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300"><a href="#">
+                    <div class="flex items-center justify-center">
+                        <i class="hgi hgi-stroke hgi-file-download mr-2"></i>
+                        <p>Download CV</p>
+                    </div>
+                </a></li>
             </ul>
         </nav>
         <!-- Main Section -->
@@ -59,17 +74,23 @@
             <h2 class="main-heading text-center text-2xl font-bold mb-8">Skills</h2>
             <div class="container mx-auto px-4">
                 <div class="card bg-white rounded-3xl border">
-                    <div class="head text-xl font-bold p-4">Front-End Development</div>
+                    <div class="head text-xl font-bold p-4 flex items-center">
+                        <i class="hgi hgi-stroke hgi-code-folder mr-2"></i>
+                        <p>Front-End Development</p>
+                    </div>
                     <div class="body bg-yellow-200 p-4 flex flex-wrap gap-2">
                         <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">HTML</span>
                         <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">CSS</span>
                         <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">Javascript</span>
-                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">Tailwind CSS</span>
+                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">Tailwind</span>
                     </div>
                     <div class="foot text-gray-500 p-4">Building structured, responsive, and user focused web interfaces.</div>
                 </div>
                 <div class="card bg-white rounded-3xl border">
-                    <div class="head text-xl font-bold p-4">UI / UX & Visual Design</div>
+                    <div class="head text-xl font-bold p-4 flex items-center">
+                        <i class="hgi hgi-stroke hgi-canvas mr-2"></i>
+                        <p>UI / UX & Visual Design</p>
+                    </div>
                     <div class="body bg-violet-200 p-4 flex flex-wrap gap-2">
                         <span class="bg-violet-400 py-1 px-2 rounded-full text-black">Figma</span>
                         <span class="bg-violet-400 py-1 px-2 rounded-full text-black">Adobe Illustrator</span>
@@ -77,7 +98,10 @@
                     <div class="foot text-gray-500 p-4">Designing clean interfaces with strong focus on usability and clarity.</div>
                 </div>
                 <div class="card bg-white rounded-3xl border">
-                    <div class="head text-xl font-bold p-4">Workflow & Productivity</div>
+                    <div class="head text-xl font-bold p-4 flex items-center">
+                        <i class="hgi hgi-stroke hgi-workflow-circle-06 mr-2"></i>
+                        <p>Workflow & Productivity</p>
+                    </div>
                     <div class="body bg-green-200 p-4 flex flex-wrap gap-2">
                         <span class="bg-green-400 py-1 px-2 rounded-full text-black">GitHub</span>
                         <span class="bg-green-400 py-1 px-2 rounded-full text-black">Notion</span>
@@ -86,6 +110,17 @@
                     <div class="foot text-gray-500 p-4">Organizing projects, documentation, and collaboration efficiently.</div>
                 </div>
             </div>
+        </div>
+        <div class="note p-14 text-center bg-lime-400">
+            <div class="image">
+                <img src="assets/img/top view of young man sketching.svg" class="w-56 mb-5 mr-auto ml-auto" alt="">
+            </div>
+            <div class="text text-xl font-bold italic">“There are no secrets to success. It is the result of preparation, hard work, and learning from failure.”</div>
+            <p class="mt-3">Colin Powell</p>
+        </div>
+        <div class="projects bg-gray-50 py-14">
+            <h2 class="main-heading text-center text-2xl font-bold mb-8">Projects</h2>
+            <div id="projects-container" class="container mx-auto px-4"></div>
         </div>
         <script src="assets/js/main.js"></script>
     </body>
