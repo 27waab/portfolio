@@ -25,7 +25,8 @@ nav.open {
         margin-left: auto;
     }
 }
-.skills .container {
+.skills .container,
+.projects .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 10px;
