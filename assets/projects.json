@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "title": "Tarmeez App",
+        "description": "A dynamic web application focused on structured content presentation and API integration with a clean responsive layout.",
+        "image": "./assets/img/trmeez.jpg",
+        "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Axios",
+        "Bootstrap"
+        ],
+        "liveDemo": "https://tarmeezapp.netlify.app/",
+        "github": "https://github.com/27waab/social-media"
+    },
+    {
+        "id": 1,
+        "title": "Sudarent",
+        "description": "A responsive web interface built with clean layout structure and interactive UI components.",
+        "image": "./assets/img/sudarent.jpg",
+        "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+        ],
+        "liveDemo": "https://27waab.github.io/sudarent/",
+        "github": "https://github.com/27waab/sudarent"
+    },
+    {
+        "id": 2,
+        "title": "Afaq",
+        "description": "A structured web project utilizing JSON data handling with organized UI sections and responsive design principles.",
+        "image": "./assets/img/afaq.jpg",
+        "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JSON"
+        ],
+        "liveDemo": "https://afaqapp.netlify.app/",
+        "github": "https://github.com/27waab/Afaq"
+    }
+]
