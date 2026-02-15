@@ -26,7 +26,8 @@ nav.open {
     }
 }
 .skills .container,
-.projects .container {
+.projects .container,
+.contact .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 10px;
