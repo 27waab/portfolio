@@ -14,15 +14,15 @@ closeBtn.addEventListener("click", () => {
 })
 
 fetch(jsonURL)
-.then(response => response.json())
-.then(projects => {
-    projects.forEach(project => {
-        const card = document.createElement('div');
-        card.className = 'card bg-white rounded-2xl border';
-        card.innerHTML = `
+    .then(response => response.json())
+    .then(projects => {
+        projects.forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'card bg-white rounded-2xl border';
+            card.innerHTML = `
         <div class="head text-2xl font-bold mb-2 px-4 pt-4">${project.title}</div>
         <div class="image">
-            <img src="${project.image}" alt="${project.title}" class="rounded-t-2xl w-full">
+            <img src="${project.image}" alt="${project.title}" class="w-full">
         </div>
         <div class="desc p-4 text-gray-500">${project.description}</div>
         <div class="btns py-4 px-8 flex items-center justify-between">
@@ -36,7 +36,7 @@ fetch(jsonURL)
             </a>
         </div>
         `;
-        container.appendChild(card);
-    });
-})
-.catch(err => console.error('Error fetching projects:', err));
+            container.appendChild(card);
+        });
+    })
+    .catch(err => console.error('Error fetching projects:', err));
