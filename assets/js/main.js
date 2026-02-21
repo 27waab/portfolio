@@ -16,26 +16,29 @@ closeBtn.addEventListener("click", () => {
 fetch(jsonURL)
     .then(response => response.json())
     .then(projects => {
-        projects.forEach(project => {
+        const firstThree = projects.slice(0, 3);
+        firstThree.forEach(project => {
             const card = document.createElement('div');
             card.className = 'card bg-white rounded-2xl border';
             card.innerHTML = `
-        <div class="head text-2xl font-bold mb-2 px-4 pt-4">${project.title}</div>
-        <div class="image">
-            <img src="${project.image}" alt="${project.title}" class="w-full">
-        </div>
-        <div class="desc p-4 text-gray-500">${project.description}</div>
-        <div class="btns py-4 px-8 flex items-center justify-between">
-            <a href="${project.liveDemo}" target="_blank" class="flex items-center justify-evenly py-1 px-2 rounded-full bg-white border w-1/2 mx-1">
-                <i class="hgi hgi-stroke hgi-eye"></i>
-                <p>live Demo</p>
-            </a>
-            <a href="${project.github}" target="_blank" class="flex items-center justify-evenly py-1 px-2 rounded-full bg-white border w-1/2 mx-1">
-                <i class="hgi hgi-stroke hgi-github"></i>
-                <p>GitHub</p>
-            </a>
-        </div>
-        `;
+                <div class="head text-2xl font-bold mb-2 px-4 pt-4 flex items-center justify-between">
+                    <p>${project.title}</p>
+                    <a href="${project.liveDemo}" target="_blank">
+                        <div class="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <i class="hgi hgi-stroke hgi-view font-normal"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="${project.image}" alt="${project.title}" class="w-full">
+                </div>
+                <div class="mb-2 px-4 pt-4">
+                    <a href="${project.github}" target="_blank" class="flex items-center justify-center py-1 px-2 rounded-full bg-white border w-full">
+                        <i class="hgi hgi-stroke hgi-github mr-2"></i>
+                        <p>source code in github</p>
+                    </a>
+                </div>
+            `;
             container.appendChild(card);
         });
     })
