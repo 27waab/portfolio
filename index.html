@@ -9,41 +9,51 @@
         <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/css/home.css" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>Awab Abdelbagi</title>
+        <title data-en="Awab Abdelbagi" data-ar="أواب عبدالباقي">Awab Abdelbagi</title>
     </head>
     <body>
         <!-- navigation Bar Section -->
         <nav class="bg-white z-50 w-full h-screen fixed top-0 left-0 flex justify-center items-center transition duration-500">
-            <div id="closeMenu" class="closeBtn text-red-500 hover:text-red-600 transition duration-300 ease-in-out absolute top-4 right-8"><i class="hgi hgi-stroke hgi-cancel-circle"></i></div>
+            <div id="closeMenu" class="closeBtn text-red-500 hover:text-red-600 transition duration-300 ease-in-out absolute top-4 right-8">
+                <i class="hgi hgi-stroke hgi-cancel-circle"></i>
+            </div>
             <ul class="w-full">
-                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300 "><a href="index.html">
-                    <div class="flex items-center justify-center">
-                        <i class="hgi hgi-stroke hgi-home-01 mr-2"></i>
-                        <p>Home</p>
-                    </div>
-                </a></li>
-                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300"><a href="projects.html">
-                    <div class="flex items-center justify-center">
-                        <i class="hgi hgi-stroke hgi-package mr-2"></i>
-                        <p>Projects</p>
-                    </div>
-                </a></li>
-                <li class="text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300"><a href="#">
-                    <div class="flex items-center justify-center">
-                        <i class="hgi hgi-stroke hgi-file-download mr-2"></i>
-                        <p>Download CV</p>
-                    </div>
-                </a></li>
+                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300">
+                    <a href="index.html">
+                        <div class="flex items-center justify-center">
+                            <i class="hgi hgi-stroke hgi-home-01 mr-2"></i>
+                            <p data-en="Home" data-ar="الرئيسية">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300">
+                    <a href="projects.html">
+                        <div class="flex items-center justify-center">
+                            <i class="hgi hgi-stroke hgi-package mr-2"></i>
+                            <p data-en="Projects" data-ar="المشاريع">Projects</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300">
+                    <a href="#">
+                        <div class="flex items-center justify-center">
+                            <i class="hgi hgi-stroke hgi-file-download mr-2"></i>
+                            <p data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</p>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </nav>
-        <!-- Main Section -->
         <header class="bg-white border-b py-2 fixed top-0 w-full z-40">
             <div class="container mx-auto px-4 flex justify-between items-center">
-                <div class="logo font-bold text-lg">Awab Abdelbagi</div>
-                <div class="right-side">
-                    <button id="menuBtn" class="bg-white border flex justify-evenly items-center w-24 p-1 rounded-full">
+                <div class="logo font-bold text-lg" data-en="Awab Abdelbagi" data-ar="أواب عبدالباقي">Awab Abdelbagi</div>
+                <div class="right-side flex items-center">
+                    <button id="langChange" class="bg-white border mr-2 flex justify-evenly items-center w-9 p-1 rounded-full transition duration-300 hover:bg-gray-100">
+                        <i class="hgi hgi-stroke hgi-language-square"></i>
+                    </button>
+                    <button id="menuBtn" class="bg-white border flex justify-evenly items-center w-24 p-1 rounded-full transition duration-300 hover:bg-gray-100">
                         <i class="hgi hgi-stroke hgi-menu-04"></i>
-                        <span>Menu</span>
+                        <span data-en="Menu" data-ar="القائمة">Menu</span>
                     </button>
                 </div>
             </div>
@@ -51,18 +61,18 @@
         <div class="hero-section">
             <div class="container mx-auto px-4 py-7 flex flex-col-reverse md:flex-row justify-evenly items-center text-center md:text-left">
                 <div class="text w-full md:w-1/2 px-2">
-                    <p class="name border w-fit py-1 px-4 rounded-full md:my-auto">Hi I'm Awab</p>
-                    <h1 class="text-4xl font-bold mt-3">Front-End Web Developer</h1>
-                    <p class="info text-gray-500 my-2">I build well-organized interfaces focused on UX and real-world problem solving</p>
+                    <p class="name border w-fit py-1 px-4 rounded-full md:my-auto" data-en="Hi I'm Awab" data-ar="مرحباً أنا أواب">Hi I'm Awab</p>
+                    <h1 class="text-4xl font-bold mt-3 text-left" data-en="Front-End Web Developer" data-ar="مطور واجهات أمامية">Front-End Web Developer</h1>
+                    <p class="info text-gray-500 my-2 text-left" data-en="I build well-organized interfaces focused on UX and real-world problem solving" data-ar="أبني واجهات منظمة تركز على تجربة المستخدم وحل المشكلات الواقعية">I build well-organized interfaces focused on UX and real-world problem solving</p>
                     <div class="buttons flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
                         <button id="menuBtn" class="bg-lime-400 duration-300 hover:bg-lime-500 flex justify-evenly items-center w-fit py-2 px-4 rounded-full mr-2">
                             <i class="hgi hgi-stroke hgi-download-03 mr-3"></i>
-                            <span>Download CV</span>
+                            <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
                         </button>
                         <a href="projects.html">
                             <button id="menuBtn" class="bg-white border transition duration-300 hover:bg-gray-100 flex justify-evenly items-center w-fit py-2 px-4 rounded-full">
                                 <i class="hgi hgi-stroke hgi-delivery-box-01 mr-2"></i>
-                                <span>Descover Projects</span>
+                                <span data-en="Descover Projects" data-ar="استكشف المشاريع">Descover Projects</span>
                             </button>
                         </a>
                     </div>
@@ -73,87 +83,93 @@
             </div>
         </div>
         <div class="skills bg-gray-50 py-14">
-            <h2 class="main-heading text-center text-2xl font-bold mb-8">Skills</h2>
+            <h2 class="main-heading text-center text-2xl font-bold mb-8" data-en="Skills" data-ar="المهارات">Skills</h2>
             <div class="container mx-auto px-4">
                 <div class="card bg-white rounded-3xl border">
                     <div class="head text-xl font-bold p-4 flex items-center">
                         <i class="hgi hgi-stroke hgi-code-folder mr-2"></i>
-                        <p>Front-End Development</p>
+                        <p data-en="Front-End Development" data-ar="تطوير الواجهات الأمامية">Front-End Development</p>
                     </div>
                     <div class="body bg-yellow-200 p-4 flex flex-wrap gap-2">
-                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">HTML</span>
-                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">CSS</span>
-                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">Javascript</span>
-                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black">Tailwind</span>
+                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black" data-en="HTML" data-ar="اتش تي ام ال">HTML</span>
+                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black" data-en="CSS" data-ar="سي اس اس">CSS</span>
+                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black" data-en="Javascript" data-ar="جافاسكربت">Javascript</span>
+                        <span class="bg-yellow-400 py-1 px-2 rounded-full text-black" data-en="Tailwind" data-ar="تايلويند">Tailwind</span>
                     </div>
-                    <div class="foot text-gray-500 p-4">Building structured, responsive, and user focused web interfaces.</div>
+                    <div class="foot text-gray-500 p-4" data-en="Building structured, responsive, and user focused web interfaces." data-ar="بناء واجهات منظمة ومتجاوبة تركز على المستخدم."> Building structured, responsive, and user focused web interfaces.</div>
                 </div>
                 <div class="card bg-white rounded-3xl border">
                     <div class="head text-xl font-bold p-4 flex items-center">
                         <i class="hgi hgi-stroke hgi-canvas mr-2"></i>
-                        <p>UI / UX & Visual Design</p>
+                        <p data-en="UI / UX & Visual Design" data-ar="تصميم واجهات وتجربة المستخدم">UI / UX & Visual Design</p>
                     </div>
                     <div class="body bg-violet-200 p-4 flex flex-wrap gap-2">
-                        <span class="bg-violet-400 py-1 px-2 rounded-full text-black">Figma</span>
-                        <span class="bg-violet-400 py-1 px-2 rounded-full text-black">Adobe Illustrator</span>
+                        <span class="bg-violet-400 py-1 px-2 rounded-full text-black" data-en="Figma" data-ar="فيجما">Figma</span>
+                        <span class="bg-violet-400 py-1 px-2 rounded-full text-black" data-en="Adobe Illustrator" data-ar="أدوبي إليستريتور">Adobe Illustrator</span>
                     </div>
-                    <div class="foot text-gray-500 p-4">Designing clean interfaces with strong focus on usability and clarity.</div>
+                    <div class="foot text-gray-500 p-4" data-en="Designing clean interfaces with strong focus on usability and clarity." data-ar="تصميم واجهات نظيفة مع تركيز قوي على سهولة الاستخدام والوضوح."> Designing clean interfaces with strong focus on usability and clarity.</div>
                 </div>
                 <div class="card bg-white rounded-3xl border">
                     <div class="head text-xl font-bold p-4 flex items-center">
                         <i class="hgi hgi-stroke hgi-workflow-circle-06 mr-2"></i>
-                        <p>Workflow & Productivity</p>
+                        <p data-en="Workflow & Productivity" data-ar="تنظيم العمل والإنتاجية">Workflow & Productivity</p>
                     </div>
                     <div class="body bg-green-200 p-4 flex flex-wrap gap-2">
-                        <span class="bg-green-400 py-1 px-2 rounded-full text-black">GitHub</span>
-                        <span class="bg-green-400 py-1 px-2 rounded-full text-black">Notion</span>
-                        <span class="bg-green-400 py-1 px-2 rounded-full text-black">Git</span>
+                        <span class="bg-green-400 py-1 px-2 rounded-full text-black" data-en="GitHub" data-ar="جيت هاب">GitHub</span>
+                        <span class="bg-green-400 py-1 px-2 rounded-full text-black" data-en="Notion" data-ar="نوشن">Notion</span>
+                        <span class="bg-green-400 py-1 px-2 rounded-full text-black" data-en="Git" data-ar="جيت">Git</span>
                     </div>
-                    <div class="foot text-gray-500 p-4">Organizing projects, documentation, and collaboration efficiently.</div>
+                    <div class="foot text-gray-500 p-4" data-en="Organizing projects, documentation, and collaboration efficiently." data-ar="تنظيم المشاريع والتوثيق والتعاون بكفاءة.">Organizing projects, documentation, and collaboration efficiently.</div>
                 </div>
             </div>
         </div>
-        <div class="note p-14 text-center bg-lime-400">
+        <div class="note p-14 text-center bg-lime-400 flex flex-col items-center">
             <div class="image">
                 <img src="assets/img/top view of young man sketching.svg" class="w-56 mb-5 mr-auto ml-auto" alt="">
             </div>
-            <div class="text text-xl font-bold italic">“There are no secrets to success. It is the result of preparation, hard work, and learning from failure.”</div>
-            <p class="mt-3">Colin Powell</p>
+            <div class="text text-xl font-bold italic" data-en="There are no secrets to success. It is the result of preparation, hard work, and learning from failure." data-ar="لا توجد أسرار للنجاح، إنه نتيجة التحضير والعمل الجاد والتعلم من الفشل.">
+                “There are no secrets to success. It is the result of preparation, hard work, and learning from failure.”
+            </div>
+            <p class="mt-3" data-en="Colin Powell" data-ar="كولن باول">Colin Powell</p>
         </div>
         <div class="projects bg-gray-50 py-14">
-            <h2 class="main-heading text-center text-2xl font-bold mb-8">Projects</h2>
+            <h2 class="main-heading text-center text-2xl font-bold mb-8" data-en="Projects" data-ar="المشاريع">Projects</h2>
             <div id="projects-container" class="container mx-auto px-4"></div>
-            <div class="text-center mt-8"><a href="projects.html" class="py-1 px-4 bg-lime-400 rounded-full text-lg">see more</a></div>
+            <div class="text-center mt-8">
+                <a href="projects.html" class="py-1 px-4 bg-lime-400 rounded-full text-lg" data-en="see more" data-ar="عرض المزيد">see more</a>
+            </div>
         </div>
         <div class="contact bg-white py-14">
-            <h2 class="main-heading text-center text-2xl font-bold mb-2">Contact</h2>
-            <p class="main-title text-center text-xl mb-8 text-gray-500">Let’s Work Together</p>
-            <div class="container mx-auto px-4">
-                <div class="card transition duration-300 shadow-md hover:shadow-2xl relative overflow-hidden w-full p-9 text-center bg-[radial-gradient(circle_at_center,_#14532d_0%,_#052e16_60%)] rounded-2xl text-white mb-8">
-                    <h4 class="text-xl font-bold mb-2">Let’s Chat</h4>
-                    <p class="mb-5">Quick questions? Feel free to message me directly on WhatsApp.</p>
-                    <a href="#" class="py-1 px-4 bg-green-500 rounded-full">WhatsApp</a>
-                    <img src="assets/img/whatsappIcon.svg" class="left w-12 sm:w-24 absolute left-2 -bottom-5 -rotate-12" alt="WhatsApp-Icon" />
-                    <img src="assets/img/whatsappIcon.svg" class="right w-12 sm:w-24 absolute right-2 -top-5 rotate-12" alt="WhatsApp-Icon" />
+            <h2 class="main-heading text-center text-2xl font-bold mb-5" data-en="Contact" data-ar="تواصل معي">Contact</h2>
+            <div class="container mx-auto px-4 flex flex-col items-center">
+                <div class="image">
+                    <img src="assets/img/isometric view of colleagues working and talking in the office.svg" class="w-56 mb-5 mr-auto ml-auto" alt="isometric view of colleagues working and talking in the office" />
                 </div>
-                <div class="card transition duration-300 shadow-md hover:shadow-2xl relative overflow-hidden w-full p-9 text-center bg-[radial-gradient(circle_at_center,_#7f1d1d_0%,_#450a0a_60%)] rounded-2xl text-white mb-8">
-                    <h4 class="text-xl font-bold mb-2">Send Me an Email</h4>
-                    <p class="mb-5">For collaborations, opportunities, or detailed discussions.</p>
-                    <a href="#" class="py-1 px-4 bg-red-500 rounded-full">Email</a>
-                    <img src="assets/img/emailIcon.svg" class="left w-12 sm:w-24 absolute left-2 -bottom-5 -rotate-12" alt="Email-Icon" />
-                    <img src="assets/img/emailIcon.svg" class="right w-12 sm:w-24 absolute right-2 -top-5 rotate-12" alt="Email-Icon" />
-                </div>
-                <div class="card transition duration-300 shadow-md hover:shadow-2xl relative overflow-hidden w-full p-9 text-center bg-[radial-gradient(circle_at_center,_#1e3a8a_0%,_#0c1a3b_60%)] rounded-2xl text-white">
-                    <h4 class="text-xl font-bold mb-2">Connect on LinkedIn</h4>
-                    <p class="mb-5">Let’s grow our professional network and build something meaningful.</p>
-                    <a href="#" class="py-1 px-4 bg-blue-500 rounded-full">Linkedin</a>
-                    <img src="assets/img/linkedinIcon.svg" class="left w-12 sm:w-24 absolute left-2 -bottom-5 -rotate-12" alt="Linkedin-Icon" />
-                    <img src="assets/img/linkedinIcon.svg" class="right w-12 sm:w-24 absolute right-2 -top-5 rotate-12" alt="Linkedin-Icon" />
+                <p class="main-title text-center text-lg mb-5 text-gray-500" data-en="Let’s Work Together" data-ar="لنعمل معاً">Let’s Work Together</p>
+                <div class="flex w-fit mx-auto">
+                    <a href="#">
+                        <button class="bg-white border transition duration-300 hover:bg-blue-100 flex justify-evenly items-center w-fit py-2 px-4 rounded-full">
+                            <i class="hgi hgi-stroke hgi-linkedin-01 mr-2"></i>
+                            <span data-en="Linkedin" data-ar="لينكدإن">Linkedin</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="bg-white mx-3 border transition duration-300 hover:bg-green-100 flex justify-evenly items-center w-fit py-2 px-4 rounded-full">
+                            <i class="hgi hgi-stroke hgi-whatsapp mr-2"></i>
+                            <span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="bg-white border transition duration-300 hover:bg-red-100 flex justify-evenly items-center w-fit py-2 px-4 rounded-full">
+                            <i class="hgi hgi-stroke hgi-mail-01 mr-2"></i>
+                            <span data-en="Email" data-ar="البريد الإلكتروني">Email</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
         <footer class="bg-black py-6">
-            <div class="text-white text-center text-base">© 2026 Awab Abdelbagi</div>
+            <div class="text-white text-center text-base" data-en="© 2026 Awab Abdelbagi" data-ar="© 2026 أواب عبدالباقي">© 2026 Awab Abdelbagi</div>
         </footer>
         <script src="assets/js/main.js"></script>
     </body>
