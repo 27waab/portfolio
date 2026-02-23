@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/home.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Awab Abdelbagi | Projects</title>
+    </head>
+    <body>
+        <!-- navigation Bar Section -->
+        <nav class="bg-white z-50 w-full h-screen fixed top-0 left-0 flex justify-center items-center transition duration-500">
+            <div id="closeMenu"
+                class="closeBtn text-red-500 hover:text-red-600 transition duration-300 ease-in-out absolute top-4 right-8">
+                <i class="hgi hgi-stroke hgi-cancel-circle"></i>
+            </div>
+            <ul class="w-full">
+                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300">
+                    <a href="index.html">
+                        <div class="flex items-center justify-center">
+                            <i class="hgi hgi-stroke hgi-home-01 mr-2"></i>
+                            <p>Home</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="border-b text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300">
+                    <a href="projects.html">
+                        <div class="flex items-center justify-center">
+                            <i class="hgi hgi-stroke hgi-package mr-2"></i>
+                            <p>Projects</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="text-center hover:bg-gray-100 p-3 font-bold text-lg transition duration-300">
+                    <a href="#">
+                        <div class="flex items-center justify-center">
+                            <i class="hgi hgi-stroke hgi-file-download mr-2"></i>
+                            <p>Download CV</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- PROJECT MODAL -->
+        <div id="projectModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 opacity-0 transition-opacity duration-300">
+            <div id="modalCard" class="bg-white rounded-2xl w-80 mx-4 transform scale-90 transition-all duration-300">
+                <div id="modalTitle" class="text-lg font-bold p-4"></div>
+                <div id="modalTech" class="bg-lime-200 p-4 flex flex-wrap gap-2"></div>
+                <div id="modalDescription" class="p-4 text-sm"></div>
+            </div>
+        </div>
+        <!-- Website Section -->
+        <header class="bg-white border-b py-2 fixed top-0 w-full z-40">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="logo font-bold text-lg">Awab Abdelbagi</div>
+                <button id="menuBtn"
+                    class="bg-white border flex justify-evenly items-center w-24 p-1 rounded-full transition duration-300 hover:bg-gray-100">
+                    <i class="hgi hgi-stroke hgi-menu-04"></i>
+                    <span>Menu</span>
+                </button>
+            </div>
+        </header>
+        <div class="projects-section py-14">
+            <div class="container mx-auto px-4" id="projects-section"></div>
+        </div>
+        <footer class="bg-black py-6">
+            <div class="text-white text-center text-base">© 2026 Awab Abdelbagi</div>
+        </footer>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
