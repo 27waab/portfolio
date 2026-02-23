@@ -15,8 +15,11 @@ nav {
 nav.open {
     transform: translateY(0);
 }
-.hero-section  .container {
+.hero-section  .container{
     min-height: calc(100vh - 50px);
+    margin-top: 50px;
+}
+.projects-section .container {
     margin-top: 50px;
 }
 @media (max-width: 768px) {
@@ -26,28 +29,9 @@ nav.open {
     }
 }
 .skills .container,
-.projects .container {
+.projects .container,
+.projects-section .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 10px;
-}
-.quck::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    bottom: -24px;
-}
-.quck::after {
-    content: "or";
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    padding: 0 10px;
-    background-color: #fff;
-    bottom: -36px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ddd;
 }
