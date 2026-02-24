@@ -9,6 +9,8 @@ const modalCard = document.getElementById("modalCard");
 const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 const modalTech = document.getElementById("modalTech");
+const liveBtn = document.getElementById("live_link");
+const gitBtn = document.getElementById("git_link");
 
 menuBtn.addEventListener("click", () => {
     nav.classList.add("open");
@@ -25,25 +27,27 @@ fetch(jsonURL)
         const firstThree = projects.slice(0, 3);
         firstThree.forEach(project => {
             const card = document.createElement('div');
-            card.className = 'card bg-white rounded-2xl border';
+            card.className = 'card bg-white rounded-2xl border overflow-hidden';
             card.innerHTML = `
-                <div class="head text-2xl font-bold mb-2 px-4 pt-4 flex items-center justify-between">
-                    <p>${project.title}</p>
-                    <a href="${project.liveDemo}" target="_blank">
-                        <div class="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <i class="hgi hgi-stroke hgi-view font-normal"></i>
-                        </div>
-                    </a>
+                <div class="image mb-2">
+                    <img src="${project.image}" alt="${project.title}" class="w-full border-b"/>
                 </div>
-                <div class="image">
-                    <img src="${project.image}" alt="${project.title}" class="w-full">
+                <div class="title p-3 flex items-center justify-between mb-2 border-b">
+                    <div class="left-side text-lg font-bold">${project.title}</div>
+                    <div class="right-side flex">
+                        <a href="${project.liveDemo}">
+                            <div class="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
+                                <i class="hgi hgi-stroke hgi-view font-normal"></i>
+                            </div>
+                        </a>
+                        <a href="${project.github}">
+                            <div class="w-8 h-8 border rounded-full flex items-center justify-center">
+                                <i class="hgi hgi-stroke hgi-github font-normal"></i>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="mb-2 px-4 pt-4">
-                    <a href="${project.github}" target="_blank" class="flex items-center justify-center py-1 px-2 rounded-full bg-white border w-full">
-                        <i class="hgi hgi-stroke hgi-github mr-2"></i>
-                        <p>source code in github</p>
-                    </a>
-                </div>
+                <div class="info p-3 text-gray-500">${project.description}</div>
             `;
             container.appendChild(card);
         });
@@ -55,32 +59,32 @@ fetch(jsonURL)
     .then(projects => {
         projects.forEach(project => {
             const card = document.createElement('div');
-            card.className = 'card bg-white rounded-2xl border cursor-pointer';
+            card.className = 'card bg-white rounded-2xl border cursor-pointer overflow-hidden';
             card.innerHTML = `
-                <div class="head text-2xl font-bold mb-2 px-4 pt-4 flex items-center justify-between">
-                    <p>${project.title}</p>
-                    <div class="flex items-center">
-                        <a href="${project.liveDemo}" target="_blank">
-                            <div class="w-10 h-10 border rounded-full flex items-center justify-center mr-2">
+                <div class="image mb-2">
+                    <img src="${project.image}" alt="${project.title}" class="w-full border-b"/>
+                </div>
+                <div class="title p-3 flex items-center justify-between mb-2 border-b">
+                    <div class="left-side text-lg font-bold">${project.title}</div>
+                    <div class="right-side flex">
+                        <a href="${project.liveDemo}">
+                            <div class="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
                                 <i class="hgi hgi-stroke hgi-view font-normal"></i>
                             </div>
                         </a>
+                        <a href="${project.github}">
+                            <div class="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
+                                <i class="hgi hgi-stroke hgi-github font-normal"></i>
+                            </div>
+                        </a>
                         <p>
-                            <div class="w-10 h-10 border rounded-full flex items-center justify-center cursor-pointer project-btn" data-id="${project.id}">
+                            <div class="w-8 h-8 border rounded-full flex items-center justify-center cursor-pointer project-btn" data-id="${project.id}">
                                 <i class="hgi hgi-stroke hgi-dashboard-circle font-normal"></i>
                             </div>
                         </p>
                     </div>
                 </div>
-                <div class="image">
-                    <img src="${project.image}" alt="${project.title}" class="w-full">
-                </div>
-                <div class="mb-2 px-4 pt-4">
-                    <a href="${project.github}" target="_blank" class="flex items-center justify-center py-1 px-2 rounded-full bg-white border w-full">
-                        <i class="hgi hgi-stroke hgi-github mr-2"></i>
-                        <p>source code in github</p>
-                    </a>
-                </div>
+                <div class="info p-3 text-gray-500">${project.description}</div>
             `;
             projectSection.appendChild(card);
         });
@@ -97,6 +101,8 @@ fetch(jsonURL)
 function openModal(project) {
     modalTitle.textContent = project.title;
     modalDescription.textContent = project.description;
+    liveBtn.href = project.liveDemo;
+    gitBtn.href = project.github;
     modalTech.innerHTML = "";
     project.technologies.forEach(tech => {
         const span = document.createElement("span");
