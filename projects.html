@@ -5,9 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/css/home.css" />
         <script src="https://cdn.tailwindcss.com"></script>
@@ -50,9 +48,24 @@
         <!-- PROJECT MODAL -->
         <div id="projectModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 opacity-0 transition-opacity duration-300">
             <div id="modalCard" class="bg-white rounded-2xl w-80 mx-4 transform scale-90 transition-all duration-300">
-                <div id="modalTitle" class="text-lg font-bold p-4"></div>
+                <div class="px-3 py-2 text-gray-700 border-b text-center">Project Information</div>
+                <div class="head flex items-center justify-between p-3">
+                    <div id="modalTitle" class="text-lg font-bold"></div>
+                    <div class="links flex items-center">
+                        <a id="live_link">
+                            <div class="w-8 h-8 border rounded-full flex items-center justify-center mr-2">
+                                <i class="hgi hgi-stroke hgi-view font-normal"></i>
+                            </div>
+                        </a>
+                        <a id="git_link">
+                            <div class="w-8 h-8 border rounded-full flex items-center justify-center">
+                                <i class="hgi hgi-stroke hgi-github font-normal"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
                 <div id="modalTech" class="bg-lime-200 p-4 flex flex-wrap gap-2"></div>
-                <div id="modalDescription" class="p-4 text-sm"></div>
+                <div id="modalDescription" class="p-3 text-sm"></div>
             </div>
         </div>
         <!-- Website Section -->
@@ -67,6 +80,7 @@
             </div>
         </header>
         <div class="projects-section py-14">
+            <h2 class="main-heading text-center text-2xl font-bold mb-8 mt-5">All Projects</h2>
             <div class="container mx-auto px-4" id="projects-section"></div>
         </div>
         <footer class="bg-black py-6">
