@@ -40,5 +40,20 @@
         ],
         "liveDemo": "https://afaqapp.netlify.app/",
         "github": "https://github.com/27waab/Afaq"
+    },
+    {
+        "id": 4,
+        "title": "Prayer Times",
+        "description": "Prayer Times App is a simple web app that shows daily prayer times for Arab capitals using JavaScript and a live API.",
+        "image": "./assets/img/prayer.jpg",
+        "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "API",
+        "Axios"
+        ],
+        "liveDemo": "https://27waab.github.io/Prayer-Times/",
+        "github": "https://github.com/27waab/Prayer-Times"
     }
 ]
